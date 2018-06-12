@@ -1,0 +1,4 @@
+show vlan brief
+show runn | in logging|domain
+show ip access-lists TEST_ACL
+show ip ospf neighbors

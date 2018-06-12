@@ -1,0 +1,16 @@
+logging console
+logging server 1.1.1.3
+ip domain-name lab.com
+ip access-list TEST_ACL
+permit ip 1.1.1.0 0.0.0.255 any
+permit ip 2.2.2.0 0.0.0.255 any
+permit ip 3.3.3.0 0.0.0.255 any
+vlan 101
+name python_vlan_101
+vlan 102
+name python_vlan_102
+feature ospf
+router ospf 1
+interface Ethernet1/1
+ip router ospf 1 area 0
+ip ospf network point-to-point
