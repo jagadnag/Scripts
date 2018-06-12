@@ -2,7 +2,6 @@ no logging console
 no logging server 1.1.1.1
 no logging server 1.1.1.2
 no logging server 1.1.1.3
-no ip domain-name lab.com
 no ip access-list TEST_ACL
 no vlan 2 - 200
 no feature ospf
